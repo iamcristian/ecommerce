@@ -13,7 +13,7 @@ const app = express();
 app.use(express.json());
 
 // routes
-app.use("/", usersRoute);
+app.use("/api/v1/users/", usersRoute);
 
 //err middelware
 app.use(notFound);
